@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Library</title>
+        <link rel="stylesheet" href="./css/library.css" >
+        <script src="./java/library.js" defer></script>
+    </head>
+    <body>
+       <div class="container">
+           <div class="sidebar">
+               <button class="ne">new book</button>
+               <div class="form-popup" id="myForm">
+                <form action="" class="form-container">
+                  <h1>New Book</h1>
+              
+                  <label for="booky"><b>Book Name</b></label>
+                  <input type="text" id="booky" placeholder="book" name="booky" required>
+              
+                  <label for="auth"><b>author</b></label>
+                  <input type="text" id="auth" placeholder="author" name="auth" required>
+
+                  <label for="page"><b>Page Numbers</b></label>
+                  <input type="number" id="page" placeholder="page number" name="page" required>
+              
+                  <button type="submit" class="btn" id="sub">new</button>
+                  <button type="button" class="btnCancel" >Close</button>
+                </form>
+              </div>
+           </div>
+           <div class="top">
+            <h1>Library</h1>
+           </div>
+           <div class="main">
+
+           </div>
+       </div>
+    </body>
+</html>

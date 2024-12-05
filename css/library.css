@@ -1,0 +1,120 @@
+* {box-sizing: border-box;}
+
+html {height: 100vh;
+      width: 100vw;}
+
+body {max-width: 100%;
+      max-height: 100%;
+      margin:0;}
+
+.container {display: grid;
+            grid-template: repeat(10,100px) / repeat(20, 100px);
+            column-gap: 5px;
+            row-gap: 5px;}
+
+.sidebar {grid-area:1/1/11/3;
+          background-color: brown;}
+
+.top {grid-area: 1/3/3/21;
+      background-color: blue;}
+
+.main {grid-area:3/3/11/21;
+       background-color: blueviolet;
+       display:grid;
+       grid-template: repeat(5, 150px) / repeat(12, 150px);
+       column-gap: 5px;
+       row-gap: 5px;}
+
+    
+/*this section is for the form*/
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 160px;
+    left: 20px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .ne:hover {
+    opacity: 1;
+  }
+
+  /*card display*/
+  .newCard {height: 150px;
+             width:150px;
+            border:1px solid black;
+            background-color: white;
+            border-radius: 30px;
+            text-align: center;}
+
+/*toggle button*/
+ .tog {position:absolute;
+       bottom: 0;
+       right: 0;
+       background: green;}
+
+.tog::after {content:"yes";}
+  
+  .fluffy {position:absolute;
+         bottom: 0;
+         right: 0;
+         background: red; }
+
+.fluffy::after {content:"No";}
+
